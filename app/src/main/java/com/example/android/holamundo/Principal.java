@@ -21,6 +21,6 @@ private EditText cajaNombre;
     public void saludar(View v){
         String aux;
         aux = cajaNombre.getText().toString();
-        cajaMensaje.setText("Hola" + aux);
+        cajaMensaje.setText(getResources().getString(R.string.parte_saludo) +" "+ aux);
     }
 }
